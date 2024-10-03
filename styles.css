@@ -1,3 +1,171 @@
-.heading {
+@font-face {
+  font-family: Norse-Bold;
+  src: url("./assets/fonts/Norse-Bold.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* --- Side Banner --- */
+
+.odin-form__side-banner {
+  width: 380px;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: url("./assets/graphics/leaves.jpg");
+  background-size: cover;
+}
+
+.side-banner__logo-container {
+  margin-top: 150px;
+  width: 100%;
+  padding: 12px 0;
+  background-color: #05050566;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.logo-container__odin-logo {
+  width: 72px;
+}
+
+.logo-container__title {
+  font-family: Norse-Bold;
+  font-size: 4em;
+  color: #fafafa;
+}
+
+.credits {
+  font-size: 0.9em;
+  color: #fafafa;
+}
+
+.credits__link {
+  color: inherit;
+}
+
+/* --- Form Page --- */
+
+.odin-form__form-page {
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-page__disclaimer {
+  padding: 32px;
+  width: 90%;
+}
+
+.form-page__text {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.form-page__text:last-child {
+  margin-top: 20px;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.form__wrapper {
+  background-color: #fafafa;
+  padding: 12px 32px 22px;
+  box-shadow: 0 5px 6px 1px #05050544;
+}
+
+.form__title {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form__inputs {
+  max-width: 75%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 42px;
+}
+
+.form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.form__label {
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form__input {
+  padding: 8px 10px;
+  background-color: transparent;
+  border: 1px solid #ededed;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #e5e7eb;
+  transition: border 0.2s;
+}
+
+.form__input:active,
+.form__input:focus,
+.form__input:hover {
+  border: 1px solid #596d48;
+}
+
+.form__input:invalid {
+  border: 1px solid #f00;
+}
+
+.invalid {
+  display: none;
   color: red;
+}
+
+.form__input:invalid + .invalid {
+  display: block;
+}
+
+.form__button-container {
+  padding: 32px;
+}
+
+.form__button {
+  padding: 14px 38px;
+  border-radius: 6px;
+  background-color: #596d48;
+  color: #fafafa;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-page__already-account {
+  padding-left: 32px;
+}
+
+.already-account--link {
+  text-decoration: none;
+  color: #596d48;
 }

@@ -4,9 +4,135 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Sign-up Form | The Odin Project</title>
   </head>
   <body>
-    <h1 class="heading">Hola</h1>
+    <main>
+      <section class="odin-form__side-banner">
+        <div class="side-banner__logo-container">
+          <img
+            class="logo-container__odin-logo"
+            src="assets/graphics/odin-lined.png"
+            alt="odin-logo"
+          />
+          <h1 class="logo-container__title">Odin</h1>
+        </div>
+        <div class="side-banner__credits">
+          <p class="credits">
+            Photo by
+            <a
+              href="https://unsplash.com/es/@haliewestphoto"
+              class="credits__link"
+              target="_blank"
+              >Halie West</a
+            >
+            on
+            <a
+              href="https://unsplash.com/es"
+              class="credits__link"
+              target="_blank"
+              >Unsplash</a
+            >
+          </p>
+        </div>
+      </section>
+      <section class="odin-form__form-page">
+        <div class="form-page__disclaimer">
+          <p class="form-page__text">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p class="form-page__text">
+            Sign up <span class="text--italic">now</span> to get started.
+          </p>
+          <p class="form-page__text">
+            You <span class="text--italic">know</span> you want to.
+          </p>
+        </div>
+        <div class="form-page__form-container">
+          <form action="" class="form-page__form">
+            <div class="form__wrapper">
+              <h2 class="form__title">Let's do this!</h2>
+              <div class="form__inputs">
+                <div class="form__input-wrapper">
+                  <label for="first-name" class="form__label">First Name</label
+                  ><input
+                    type="text"
+                    id="first-name"
+                    class="form__input"
+                    required
+                  />
+                  <span class="invalid">*First name is required</span>
+                </div>
+                <div class="form__input-wrapper">
+                  <label for="last-name" class="form__label">Last Name</label
+                  ><input
+                    type="text"
+                    id="last-name"
+                    class="form__input"
+                    required
+                  />
+                  <span class="invalid">*Last name is required</span>
+                </div>
+                <div class="form__input-wrapper">
+                  <label for="email" class="form__label">Email</label
+                  ><input
+                    type="email"
+                    id="email"
+                    class="form__input"
+                    required
+                  />
+                  <span class="invalid">*Email is required</span>
+                </div>
+                <div class="form__input-wrapper">
+                  <label for="phone-number" class="form__label"
+                    >Phone Number</label
+                  ><input
+                    type="text"
+                    id="phone-number"
+                    class="form__input"
+                    required
+                  />
+                  <span class="invalid">*Phone number is required</span>
+                </div>
+                <div class="form__input-wrapper">
+                  <label for="password" class="form__label">Password</label
+                  ><input
+                    type="password"
+                    id="password"
+                    class="form__input"
+                    required
+                  />
+                  <span class="invalid">*Passwords do not match</span>
+                </div>
+                <div class="form__input-wrapper">
+                  <label for="confirm-password" class="form__label"
+                    >Confirm Password</label
+                  ><input
+                    type="password"
+                    id="confirm-password"
+                    class="form__input"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form__button-container">
+              <button class="form__button" type="submit">Create Account</button>
+            </div>
+          </form>
+          <p class="form-page__already-account">
+            Already have an account?
+            <a href="#" class="already-account--link">Log in</a>
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
